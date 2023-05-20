@@ -1,0 +1,28 @@
+{
+    "name": "htcw_ramp",
+    "version": "0.1.0",
+    "description": "Provides a simple class to implement transitions between numbers",
+    "keywords": ["ramp"],
+    "authors": {
+        "name":"honey the codewitch",
+        "homepage": "https://www.codeproject.com/Members/code-witch"
+    },
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*",
+    "examples": [
+        {
+            "name": "Demo",
+            "base": "examples/demo",
+            "files": [
+                "platformio.ini",
+                "src/main.cpp"
+            ]
+        }
+    ],
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/codewitch-honey-crisis/htcw_player.git"
+    }
+}
