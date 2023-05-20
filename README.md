@@ -1,6 +1,6 @@
-# bits
+# ramp
 
-A set of advanced bit manipulation routines
+A little utility class to ramp between value
 
 ```
 [env:node32s]
@@ -8,5 +8,5 @@ platform = espressif32
 board = node32s
 framework = arduino
 lib_deps = 
-	codewitch-honey-crisis/htcw_bits@^1.0.4
+	codewitch-honey-crisis/htcw_ramp
 ```
