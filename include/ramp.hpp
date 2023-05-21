@@ -3,15 +3,24 @@
 
 typedef void(*ramp_on_step_callback_t)(int value, void*state);
 
+/// @brief Produces a ramp of values up or down
 class ramp {
+    // the last time the ramp updated
     uint32_t m_last_ts;
+    // the step increment
     int m_step;
+    // the remaining steps
     size_t m_count;
+    // the time between steps, in ms
     uint32_t m_step_delay;
+    // the current value
     int m_value;
+    // the on_step callback
     ramp_on_step_callback_t m_on_step;
+    // user state for the callback
     void* m_on_step_state;
 public:
+    /// @brief Constructs the ramp
     ramp();
     /// @brief Begin a ramp from a given value to a given value
     /// @param start The beginning value

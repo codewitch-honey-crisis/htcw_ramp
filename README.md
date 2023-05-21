@@ -1,6 +1,6 @@
 # ramp
 
-A little utility class to ramp between value
+A little utility class to ramp between values
 
 ```
 [env:node32s]
