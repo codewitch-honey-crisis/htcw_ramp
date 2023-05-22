@@ -1,6 +1,6 @@
 {
     "name": "htcw_ramp",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Provides a simple class to implement transitions between numbers",
     "keywords": ["ramp"],
     "authors": {

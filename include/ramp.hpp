@@ -46,4 +46,13 @@ public:
     bool done() const;
     /// @brief Gives the ramp CPU slices. Should be called regularly.
     void update();
+    /// @brief Indicates the computed step for this operation
+    /// @return The current step being used. This may not be the same as the one passed in.
+    int step() const;
+    /// @brief Indicates the number of remaining advances to make
+    /// @return The current number of steps remaining
+    int remaining() const;
+    /// @brief Indicates the current delay between steps
+    /// @return The number of milliseconds that occur between steps
+    uint32_t step_delay() const;
 };

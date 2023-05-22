@@ -64,3 +64,18 @@ int ramp::value() const {
 bool ramp::done() const {
     return m_count <= 0;
 }
+/// @brief Indicates the computed step for this operation
+/// @return The current step being used. This may not be the same as the one passed in.
+int ramp::step() const {
+    return m_step;
+}
+/// @brief Indicates the number of remaining advances to make
+/// @return The current number of steps remaining
+int ramp::remaining() const {
+    return m_count;
+}
+/// @brief Indicates the current delay between steps
+/// @return The number of milliseconds that occur between steps
+uint32_t ramp::step_delay() const {
+    return m_step_delay;
+}
